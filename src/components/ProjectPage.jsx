@@ -1,9 +1,9 @@
 import React from "react";
 import "./ProjectPage.css";
 import { Outlet, Link, useParams, useLocation } from "react-router-dom";
-import messi1 from "../logos/ScreenshotMessi1.png";
-import messi2 from "../logos/ScreenshotMessi2.png";
-import messi3 from "../logos/ScreenshotMessi3.png";
+import messi1 from "../logos/Messi1.png";
+import messi2 from "../logos/Messi2.png";
+import messi3 from "../logos/Messi3.png";
 import messiVideo from "../logos/messiVideo.mp4";
 import realEstate1 from "../logos/realEstate1.png";
 import realEstate2 from "../logos/realEstate2.png";
@@ -115,7 +115,7 @@ const ProjectPage = () => {
   const found = projects.find((element) => element?.id == id);
 
   let websiteUrl;
-  
+
   if (found.id == "1") {
     websiteUrl = "https://the-leo-messi-store.netlify.app";
   } else if (found.id == "2") {
