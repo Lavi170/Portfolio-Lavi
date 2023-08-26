@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10%;
+      font-size: 20px;
+}
+a, button{
+    font-family: "Monserrat", sans-serif ;
+    font-weight: 500;
+    font-size: 2vw;
+    margin-left: 9px;
+    margin-right: 9px;
+    color: snow;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+  }
+  a:hover {
+    color: rgb(34, 34, 249);
+  }
+ 
+  a:visited {
+    text-decoration: none;
+  }
+  .the-div{
+    color: snow;
+  }
+  

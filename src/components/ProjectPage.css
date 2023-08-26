@@ -1,0 +1,224 @@
+.project-page {
+    background-color: #1a191d;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .project-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .project-page-image {
+    max-width: 300px;
+    margin: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  .project-video {
+    max-width: 560px;
+    max-height: 315px;
+    margin: 0.5rem;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .project-description p{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: snow;
+    font-size: 25px;
+  }
+  
+  .project-technologies {
+    text-align: center;
+  }
+  
+  .project-technologies h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-technologies ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-technologies li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  #project-pic2{
+    height: 14vw;
+    min-height: 150px;
+  }
+  .project-nav{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 25px 10%;
+      font-size: 2vw;
+      color: snow;
+}
+.project-images-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.next-project-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0379f8de;
+    color: snow;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .next-project-link:hover {
+    background-color: #1a5a91de;
+  }
+
+  .home-link {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #0379f8de;
+    color: snow;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .home-link:hover {
+    background-color: #1267b1de;
+  }
+  
+  .project-description {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .git-and-website-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+  }
+  .git-button {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: .6s ease;
+  }
+  
+  .git-button svg {
+    height: 30px;
+  }
+  
+  .git-button:hover {
+    box-shadow: none;
+  }
+  .to-website-btn {
+    padding: 0.9em 1.6em;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+   }
+   
+   .to-website-btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+   }
+   /* glow */
+   .to-website-btn::before {
+    content: "";
+    background: linear-gradient(
+       45deg,
+       #FF0000, #002BFF, #FF00C8, #002BFF,
+         #FF0000, #002BFF, #FF00C8, #002BFF
+   );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+   }
+   
+   @keyframes glowing {
+    0% {
+     background-position: 0 0;
+    }
+   
+    50% {
+     background-position: 400% 0;
+    }
+   
+    100% {
+     background-position: 0 0;
+    }
+   }
+   
+   /* hover */
+   .to-website-btn:hover::before {
+    opacity: 1;
+   }
+   
+   .to-website-btn:active:after {
+    background: transparent;
+   }
+   
+   .to-website-btn:active {
+    color: #000;
+    font-weight: bold;
+   }
