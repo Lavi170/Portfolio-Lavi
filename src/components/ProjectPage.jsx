@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProjectPage.css";
 import { Outlet, Link, useParams, useLocation } from "react-router-dom";
-import githubLogo from "../logos/icons8-css-50.png";
 import messi1 from "../logos/ScreenshotMessi1.png";
 import messi2 from "../logos/ScreenshotMessi2.png";
 import messi3 from "../logos/ScreenshotMessi3.png";
