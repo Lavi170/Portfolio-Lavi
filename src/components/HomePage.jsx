@@ -1,6 +1,8 @@
 import React from "react";
 import "./Homepage.css";
 import { Outlet, Link, useParams, useLocation } from "react-router-dom";
+import codeBack from "../logos/codeBack.png";
+import backGroundBlack from "../logos/black-backround-lavi.png";
 import Loader1 from "./Loader1";
 import SocialMedia from "./SocialMedia";
 import reactLogo from "../logos/icons8-react-100.png";
@@ -143,7 +145,16 @@ const Homepage = () => {
             id="nodejs-logo"
           />
         </div>
-        <div className="content">
+        <div
+        className="content"
+        style={{
+          backgroundImage: `url(${backGroundBlack})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
           <div className="about-section">
             <h1 className="my-name">Lavi Reichman</h1>
             <h2 className="my-title">
@@ -153,7 +164,7 @@ const Homepage = () => {
         </div>
       </div>
       <div className="technologies-container">
-        <img id="image1" src="./src/logos/codeBack.png" alt="" />
+        <img id="image1" src={codeBack} alt="" />
         <div className="technologies-box">
           <h2 id="technologies-header">Technologies</h2>
           <ul className="technologies-list">
