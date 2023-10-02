@@ -2,7 +2,7 @@ import React from "react";
 import "./Homepage.css";
 import { Outlet, Link, useParams, useLocation } from "react-router-dom";
 import Loader1 from "./Loader1";
-import SocialMedia from "./SocialMedia"
+import SocialMedia from "./SocialMedia";
 import reactLogo from "../logos/icons8-react-100.png";
 import jsLogo from "../logos/icons8-javascript-30.png";
 import mongoDBLogo from "../logos/icons8-mongodb-48.png";
@@ -13,16 +13,19 @@ import sqlLogo from "../logos/icons8-sql-50.png";
 import cssLogo from "../logos/icons8-css-50.png";
 import expressLogo from "../logos/icons8-express-js-50.png";
 import jsonLogo from "../logos/icons8-json-50.png";
-import messi1 from "../logos/ScreenshotMessi1.png"
-import messi2 from "../logos/ScreenshotMessi2.png"
-import realEstate1 from "../logos/realEstate1.png"
-import realEstate2 from "../logos/realEstate2.png"
-import farmers1 from "../logos/farmers1.png"
-import farmers2 from "../logos/farmers2.png"
-import goalTicket1 from "../logos/goalTicket1.png"
-import goalTicket2 from "../logos/goalTicket2.png"
-import cv1 from "../logos/cv1.png"
-import cv2 from "../logos/cv2.png"
+import messi1 from "../logos/messiPic1.png";
+import messi2 from "../logos/messiPic2.png";
+import realEstate1 from "../logos/realEstate1.png";
+import realEstate2 from "../logos/realEstate2.png";
+import farmers1 from "../logos/farmers1.png";
+import farmers2 from "../logos/farmers2.png";
+import goalTicket1 from "../logos/goalTicket1.png";
+import goalTicket2 from "../logos/goalTicket2.png";
+import cv1 from "../logos/cv1.png";
+import cv2 from "../logos/cv2.png";
+import endProject1 from "../logos/endProject1.png";
+import endProject2 from "../logos/endProject2.png";
+
 const Homepage = () => {
   const technologies = [
     { name: "React.js", logo: reactLogo },
@@ -41,40 +44,51 @@ const Homepage = () => {
     {
       id: 1,
       name: "The Messi Store",
-      description: "An all HTML project I build 3 days after strating to code, featuring a Leo Messi about and shirt shopping website ",
+      description:
+        "An all HTML project I build 3 days after strating to code, featuring a Leo Messi about and shirt shopping website ",
       image: messi1,
-      image2: messi2
+      image2: messi2,
     },
     {
       id: 2,
       name: "Real Estate Website",
-      description: "My first React.js project featuring a Real Estate website for home seekers",
+      description:
+        "My first React.js project featuring a Real Estate website for home seekers",
       image: realEstate2,
-      image2: realEstate1
+      image2: realEstate1,
     },
     {
       id: 3,
       name: "Farmers Depot",
-      description: "A hakaton project done in 32 straight hours of work from scratch trying to connect consumers to farmers and their fresh crop easier",
+      description:
+        "A hakaton project done in 32 straight hours of work from scratch trying to connect consumers to farmers and their fresh crop easier",
       image: farmers1,
-      image2: farmers2
+      image2: farmers2,
     },
     {
       id: 4,
       name: "Goal Ticket",
-      description: "A footbal website to view your favorite teams information and upcoming games, buy game and seasonal tickets and view recent news",
+      description:
+        "A footbal website to view your favorite teams information and upcoming games, buy game and seasonal tickets and view recent news",
       image: goalTicket1,
-      image2: goalTicket2
+      image2: goalTicket2,
     },
     {
-        id: 5,
-        name: "CV Generator",
-        description:
-          "My first complete full-stack project featuring a CV generator website where you can create, edit and download various CV's",
-          image: cv1,
-        image2: cv2,
-      },
-    // Add more projects as needed
+      id: 5,
+      name: "CV Generator",
+      description:
+        "My first complete full-stack project featuring a CV generator website where you can create, edit and download various CV's",
+      image: cv1,
+      image2: cv2,
+    },
+    {
+      id: 6,
+      name: "Real Estate Project Dashboard",
+      description:
+        "A Real estate project managing dashboard that offers an all-encompassing solution that revolutionizes the way projects are managed. Working with one of the biggest construction companies in Israel, and pitched to others.",
+      image: endProject1,
+      image2: endProject2,
+    },
   ];
   return (
     <>
@@ -179,10 +193,19 @@ const Homepage = () => {
           {projects.map((project) => (
             <div className="project-block" key={project.id}>
               <Link to={`${project.id}`}>
-              <div className="project-image">
-                <img id="first-project-pic" src={project.image} alt={project.name} />
-                <img id="second-project-img" src={project.image2} alt={project.name} />
-              </div></Link>
+                <div className="project-image">
+                  <img
+                    id="first-project-pic"
+                    src={project.image}
+                    alt={project.name}
+                  />
+                  <img
+                    id="second-project-img"
+                    src={project.image2}
+                    alt={project.name}
+                  />
+                </div>
+              </Link>
               <div className="project-info">
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
@@ -192,24 +215,48 @@ const Homepage = () => {
         </div>
       </div>
       <div className="expreience-container">
-        <br /><br /><br /><br /><br /><br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h1 id="experience-header">Experience</h1>
-        <br /><br /><br />
+        <br />
+        <br />
+        <br />
         <div className="experience-content">
-            <div className="experience-block"><h1 className="first-exp-h1">Combat Engineer, Commander And Sergeant</h1><h1 className="first-exp-h1">2020-2023</h1></div>
-            <br /><br />
-            <div className="experience-block"><h1 className="first-exp-h1">700+ Hours Full Stack developer bootcamp, CyberPro Ramat Gan</h1><h1 className="first-exp-h1">2023</h1></div>
+          <div className="experience-block">
+            <h1 className="first-exp-h1">
+              Combat Engineer, Commander And Sergeant
+            </h1>
+            <h1 className="first-exp-h1">2020-2023</h1>
+          </div>
+          <br />
+          <br />
+          <div className="experience-block">
+            <h1 className="first-exp-h1">
+              700+ Hours Full Stack developer bootcamp, CyberPro Ramat Gan
+            </h1>
+            <h1 className="first-exp-h1">2023</h1>
+          </div>
         </div>
-        <br /><br /><br /><br /><br /><br /><br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
       <div className="contact-container">
         <div className="contact-head">Please Feel Free To Contact Me:</div>
         <h1 id="email">Lavireichman@gmail.com</h1>
         <div className="social-media">
-            <SocialMedia/>
+          <SocialMedia />
         </div>
       </div>
-    </> 
+    </>
   );
 };
 
