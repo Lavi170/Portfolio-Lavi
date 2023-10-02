@@ -19,7 +19,7 @@
   width: 90%;
   display: flex;
   padding: 2rem;
-  background-image: url(./src/logos/black-backround-lavi.png);
+  background-image: url(../logos/black-backround-lavi.png);
   background-size: cover;
   background-position: center center;
   align-items: center;
