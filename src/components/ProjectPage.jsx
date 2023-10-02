@@ -50,8 +50,8 @@ const ProjectPage = () => {
       description:
         "My first React.js project featuring a Real Estate website for home seekers",
       description2: "Introducing Oasis Properties, our innovative real estate project that opens the door to your dream home. With a diverse database of available properties, ranging from cozy condos to luxurious estates, our platform offers an extended filter system that ensures you find your ideal property with ease. Whether you're looking for a charming suburban retreat or a trendy urban loft, we have you covered. Connect with our experienced agents who are ready to guide you through the process and answer your questions. We've even added a Favorites feature, so you can keep track of the properties that capture your heart. Discover the perfect place to call home with Oasis Properties today!",
-      git: "https://github.com/Lavi170/Real-Estate-Project",
-      websiteUrl: "",
+      git: "https://github.com/Lavi170/Oasis-Propertiess",
+      websiteUrl: "lavis-oasis-properties.netlify.app",
       image: realEstate2,
       image2: realEstate1,
       image3: realEstate3,
@@ -68,8 +68,8 @@ const ProjectPage = () => {
       description:
         "A hakaton project done in 32 straight hours of work from scratch trying to connect consumers to farmers and their fresh crop easier",
       description2: "Farmers Depot is a revolutionary hackathon project that emerged from a 30-hour coding marathon. From ground zero, we crafted a platform catering to both farmers and consumers, providing a seamless marketplace for buying and selling fresh crops. Leveraging the power of Firebase, a versatile NoSQL database, we circumvented traditional backend constraints. Our platform's primary mission is to streamline the crop supply chain, erasing time-consuming intermediaries. Now, you can access farm-fresh fruits and vegetables straight from the source, delivered right to your doorstep. Plus, we've introduced a convenient, cost-effective delivery service and a robust rating system, ensuring a satisfying and trustworthy experience for all users. Farmers Depot is redefining the way you access and enjoy your favorite produce.",
-      git: "",
-      websiteUrl: "",
+      git: "https://github.com/Lavi170/Farmers-Depot",
+      websiteUrl: "https://farmers-depot.netlify.app",
       image: farmers1,
       image2: farmers2,
       image3: farmers3,
@@ -88,8 +88,8 @@ const ProjectPage = () => {
       description:
         "A footbal website to view your favorite teams information and upcoming games, buy game and seasonal tickets and view recent news",
       description2: "GoalTicket is your ultimate destination for football enthusiasts. Our project offers a dynamic platform where you can effortlessly access information about your favorite football teams, from upcoming games and lineups to the latest news updates. But that's not all – GoalTicket takes your football experience to the next level by allowing you to purchase season tickets or game tickets for the matches you're eager to attend. Whether you're a die-hard fan or just looking to catch a game with friends, GoalTicket has you covered. Elevate your football passion and secure your spot in the stands with us today!",
-      git: "",
-      websiteUrl: "",
+      git: "https://github.com/Lavi170/Middle-Project",
+      websiteUrl: "https://goal-ticket.netlify.app",
       image: goalTicket1,
       image2: goalTicket2,
       image3: goalTicket3,
@@ -108,8 +108,8 @@ const ProjectPage = () => {
       description:
         "My first complete full-stack project featuring a CV generator website where you can create, edit and download various CV's",
       description2:" I proudly present my first completely Full-Stack project: a CV Generator. As a testament to my growing skill set, this project combines React.js and Node.js to provide an interactive platform for users to select from a range of templates and craft their own personalized CVs. These CVs can be effortlessly tailored, edited, removed, and exported as PDF files, elevating the job application process to a new level of professionalism. Through this endeavor, I not only showcase my technical abilities but also gain invaluable insights into the intricacies of full-stack application development.",
-      git: "",
-      websiteUrl: "",
+      git: "https://github.com/Lavi170?tab=repositories",
+      websiteUrl: "https://lavis-cv-generator.netlify.app/",
       image: cv2,
       image2: cv1,
       image3: cv3,
