@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -34,4 +34,40 @@ a {
   .the-div{
     color: snow;
   }
+   */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   
+  .nav-bar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    font-size: 2vw;
+  }
+  
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: snow;
+    text-decoration: none;
+    margin: 0 20px; /* Adjust spacing between links */
+    transition: color 0.4s ease;
+  }
+  
+  a:hover {
+    color: rgb(34, 34, 249);
+  }
+  
+  .email {
+    font-weight: bold;
+    margin-left: 20px; /* Add spacing between the last link and the email */
+  }
+  
+  .the-div {
+    color: snow;
+  }

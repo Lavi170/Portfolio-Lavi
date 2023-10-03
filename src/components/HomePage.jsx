@@ -262,7 +262,9 @@ const Homepage = () => {
       </div>
       <div className="contact-container">
         <div className="contact-head">Please Feel Free To Contact Me:</div>
-        <h1 id="email">Lavireichman@gmail.com</h1>
+        <a id="email" href="mailto:lavireichman@gmail.com">
+            lavireichman@gmail.com
+          </a>
         <div className="social-media">
           <SocialMedia />
         </div>
